@@ -2,15 +2,26 @@
 //Вывод русского  текста корректно
 <?php
 
-//Lesson 3. Task 15
-// Автоматическое присвоение типов
-// Обраатить внимание на пробелы  echo 1 . 2; echo 1 . 2;
-$a='1';
-$b='2';
-echo "$a+$b+'3'";
+//Lesson 3. Task 16
+// Принудительное преобразование типов
+// Целые числа. .Используем int
+//1
+$test='12345';
+var_dump((int)$test);
+//2 Дроби через float
+$test=(float)"12.345";
+var_dump($test);
 
-echo 1.2;
-echo 1 . 2;
+//3
+$test='12.345';
+var_dump((int)$test);
+
+//4
+$test=12335;
+var_dump((string)$test);
+//5
+$test=(string) 12.345;
+var_dump($test);
 ?>
 
 
