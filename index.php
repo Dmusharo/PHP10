@@ -2,26 +2,43 @@
 //Вывод русского  текста корректно
 <?php
 
-//Lesson 3. Task 16
-// Принудительное преобразование типов
-// Целые числа. .Используем int
+//Lesson 3. Task 17
+// Получение символов строки
 //1
-$test='12345';
-var_dump((int)$test);
-//2 Дроби через float
-$test=(float)"12.345";
-var_dump($test);
-
+$str='abcde';
+echo $str[0],$str[2],$str[4];
+//2
+$str='abcde';
+echo $str[4],$str[3],$str[2],$str[1],$str[0];
 //3
-$test='12.345';
-var_dump((int)$test);
+$str='abcde';
+$num=3;
+echo $str[$num];
+//4 strlen  Функция для нахождения длины строки
 
-//4
-$test=12335;
-var_dump((string)$test);
+$str='abcdeddl';
+echo $str[strlen($str)-1];
 //5
-$test=(string) 12.345;
-var_dump($test);
+$str='abcdeddl';
+echo $str[strlen($str)-2];
+//6
+$str='abcdeddl';
+echo $str[strlen($str)-3];
+
+//7
+$str="12345";
+echo '$str[0]+$str[1]+$str[2]+$str[3]+$str[4]';
+//8
+$a=12345;
+$str=(string)$a;
+echo $str[0]+$str[1]+$str[2]+$str[3]+$str[4];
+//9
+echo $str[0]*$str[1]*$str[2]*$str[3]*$str[4];
+//10
+$a=12345;
+$str=(string)$a;
+echo $str[4],$str[3],$str[2],$str[1],$str[0];
+
 ?>
 
 
