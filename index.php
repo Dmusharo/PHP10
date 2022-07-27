@@ -28,6 +28,12 @@ echo $b;
  * Выведет последовательно 1020
  */
 
+// Lesson 3. Task 4
+// Математические операции
+$a=1+2+3;
+echo $a;
+// Sum values of variable and show result in browser
+
 
 ?>
 
