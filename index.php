@@ -1,17 +1,61 @@
 // <meta charset="utf-8">
 //Вывод русского  текста корректно
 <?php
-//Lesson 4. Task 28
-// Ключи переменных
+//Lesson 4. Task 29
+// Конструкция  if-else . Конструкция условий
 //1
-$arr=[1,2,3,4,5];
-$key1=1;
-$key2=2;
-echo $arr[$key1]+$arr[$key2];
+$test=5;
+if ($test>10) {
+    echo '+';
+} else {
+    echo '-';
+}
 //2
-$arr=['a'=>1,'b'=>2,'c'=>3];
-$key='c';
-echo $arr[$key];
+$test=5;
+if ($test<10) {
+    echo '+';
+} else {
+    echo '-';
+}
+//3
+$test=5;
+if ($test>=10) {
+    echo '+';
+} else {
+    echo '-';
+}
+//4
+$test=5;
+if ($test<=10) {
+    echo '+';
+} else {
+    echo '-';
+}
+//Проверка на равенство ==
+//5
+$test=5;
+if ($test==10) {
+    echo '+';
+} else {
+    echo '-';
+}
+//6 Проверка на неравенство !=
+$test=5;
+if ($test!=10) {
+    echo '+';
+} else {
+    echo '-';
+}
+// Сравнение переменных
+//7
+$test1=1;
+$test2=2;
+if ($test1>$test2) {
+    echo $test1;
+} else{
+    echo $test2;
+}
+
 ?>
 
 
