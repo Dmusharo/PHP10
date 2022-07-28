@@ -1,28 +1,17 @@
 // <meta charset="utf-8">
 //Вывод русского  текста корректно
 <?php
-//Lesson 4. Task 27
-// Заполнение массивов
+//Lesson 4. Task 28
+// Ключи переменных
 //1
-$arr=[];
-$arr[]=1;
-$arr[]=2;
-$arr[]=3;
-$arr[]=4;
-$arr[]=5;
-echo $arr[1];
+$arr=[1,2,3,4,5];
+$key1=1;
+$key2=2;
+echo $arr[$key1]+$arr[$key2];
 //2
-$arr=[1,2,3];
-$arr[]=4;
-$arr[]=5;
-echo $arr[3];
-//3
-$arr=[]; //можно не писать??
-$arr['year']=2022;
-$arr['month']=07;
-$arr['day']=28;
-var_dump($arr);
-
+$arr=['a'=>1,'b'=>2,'c'=>3];
+$key='c';
+echo $arr[$key];
 ?>
 
 
