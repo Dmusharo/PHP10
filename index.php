@@ -2,22 +2,11 @@
 //Вывод русского  текста корректно
 <?php
 
-//Lesson 4. Task 23
-// Ассоциативные Массивы
+//Lesson 4. Task 24
+// Порядок элементов
 //1
-$arr=[1=>'a',2=>'b',3=>'c'];
-var_dump($arr);
-//2
-$arr=[1=>'январь','февраль',"март","апрель","май","июнь","июль"];
-var_dump($arr);
-//3
-$arr=['name'=> 'denys','surname'=>'Musharov','patromymic'=>"victorovich"];
-var_dump($arr);
-echo $arr['surname'],' ', $arr['name'],' ',$arr['patromymic'];
-
-//4
-$data=['year'=>2022,'month'=>07,'day'=>28];
-var_dump($data);
+$arr = [7 => 'value1', 50 => 'value2', 	23 => 'value3'];
+echo $arr[7],$arr[0];
 ?>
 
 
