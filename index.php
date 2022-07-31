@@ -1,94 +1,83 @@
 // <meta charset="utf-8">
 //Вывод русского  текста корректно
 <?php
-//Lesson 4. Task 30
-// Типы данных и конструкция if-else
-// Число в кавычках такое же как и строка. "3"=3
-// оператор ===  сравнивает значение и тип данн
+//Lesson 4. Task 31
+// Сложные условия if -else . Лоническое и
 //1
-$test1="3";
-$test2='3';
-if ($test1==$test2) {
-    echo '+'; //+
+$num=3;
+if ($num>0 and $num<5){
+    echo "+";
 } else {
-    echo '-';
+    echo "-";
 }
 //2
-$test1="3";
-$test2='3';
-if ($test1===$test2) {
-    echo '+';//+
+$num=3;
+if ($num>=10 and $num<=20){
+    echo "+";
 } else {
-    echo '-';
+    echo "-";
 }
 //3
-$test1=3;
-$test2='3';
-if ($test1==$test2) {
-    echo '+'; //+
+$num1=4;
+$num2=3;
+if ($num1<=1 and $num2>=3){
+    echo '+';
 } else {
     echo '-';
 }
 //4
-$test1=3;
-$test2='3';
-if ($test1===$test2) {
-    echo '+'; //
-} else {
-    echo '-';//- т.к разный тип данных
+$num1=-10;
+$num2=-10;
+if ($num1>=0 or $num2>=0){
+    echo '+';
+} else{
+    echo '-'; //-
 }
 //5
-$test1=3;
-$test2=3;
-if ($test1===$test2) {
-    echo '+'; // +
+$num1=0;
+$num2=0;
+if ($num1>=0 or $num2>=0) {
+    echo '+'; //0
 } else {
-    echo '-';//
+    echo '-';
 }
 //6
-//Неравенство по значению и типу
-$test1='3';
-$test2='3';
-if ($test1!=$test2) {
-    echo '+'; // +
+$num1=0;
+$num2=5;
+if ($num1>=0 or $num2>=0) {
+    echo '+';
 } else {
-    echo '-';// т.к занчения равны
+    echo '-';
 }
-//7
-$test1='3';
-$test2='3';
-if ($test1!==$test2) {
-    echo '+'; // +
-} else {
-    echo '-';// т.к занчения равны
-}
-//8
-$test1=3;
-$test2='3';
-if ($test1!=$test2) {
-    echo '+'; // +
-} else {
-    echo '-';// т.к занчения равны
-}
-//9
-$test1=3;
-$test2='3';
-if ($test1!==$test2) {
-    echo '+'; // +т.к занчения равны, но разный тип
-} else {
-    echo '-';//
-}
-//10
-$test1=3;
-$test2=2;
-if ($test1!==$test2) {
-    echo '+'; // +т.к занчения не равны
-} else {
-    echo '-';//
-}
-// Заметки!!!   0=='' and 0=="0"  это одно и тоже
+//7 === +
+//8 == +
+//9 == +
+//10 == -
+//11 == +
+//Приоритет операции сравнений and  выше чем or
+// групировка условий
 
+//12
+$num=3;
+if (($num>5 and $num<10) or $num==20){
+    echo '+';
+} else {
+    echo '-';
+}
+//13
+$num=3;
+if (($num>5 and $num<0) or $num<3){
+    echo '+';
+} else {
+    echo '-'; //-
+}
+//14
+$num=3;
+if ($num==9 or $num>10 and  $num<20 or $num>20 and $num1<30){
+    echo '+';
+} else {
+    echo '-';
+}
 ?>
-
 
 
