@@ -1,23 +1,26 @@
 <?php
-//Lesson 5. Task 47
-// Накопление результата
-$result=0;
-for ($i=1;$i<=20;$i++){
-    $result=$result+$i;
+//Lesson 5. Task 48
+// Цикл foreach
+//1
+$arr=['a','b','c','d','e'];
+foreach ($arr as $elem){
+    echo $elem;  //Вывести все элементы массива
 }
-echo $result; //Сумма всех чисел 1 to 20
-//2
-$result=0;
-for ($i=2;$i<=100;$i+=2){
-    $result=$result+$i;
+//2 Найти сумму элементов массива
+$arr=[1,2,3,4,5,6,7,8,9];
+$sum=0;
+foreach ($arr as $elem){
+    $sum+=$elem;
 }
-echo $result; //Сумма всех чисел 2 to 100 even numbers
-//3 non even numbers from 1 to 99
-$result=1;
-for ($i=1;$i<=99;$i+=2){
-    $result=$result+$i;
+echo $sum;
+//3 Найти среднее арифметическое
+$arr=[1,2,3,4,5,6,7,8,9];
+$num=count($arr);
+$sum=0;
+foreach ($arr as $elem){
+    $sum+=$elem;
 }
-echo $result; //Сумма всех чисел
+echo $sum/$num;
 ?>
 
 
