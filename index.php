@@ -1,12 +1,19 @@
 <?php
-//Lesson 4. Task 42
-//Объединение с  Null
-//1 Тетрарный оператор
-$user=['name'=>'john','age'=>30];
-$name=$user['name'] ?? 'unknown';
+//Lesson 4. Task 43
+//Логические операции
+//1
+$a=2*(3-1);
+$b=6-2;
+$result=$a==$b;
 
-//Цепочка
-$result=$user['name']??$user['surname']??'';
+//2
+$a=5*(7-4);
+$b=1+2+7;
+$result=$a>$b;
+//3
+$a=2**4;
+$b=4**2;
+$result=$a!=$b;
 
 ?>
 
