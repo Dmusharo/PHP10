@@ -39,7 +39,6 @@ while ($sum <= 100) {
     $sum+=$i;
     $sum1++;
     echo  " ".$i;
-    // увеличиваем $i на 2 при
 } 	echo " Всего ".$sum1." result is ".$sum;
 ?>
 
