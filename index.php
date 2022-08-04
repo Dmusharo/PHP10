@@ -1,97 +1,194 @@
 <?php
-//Lesson 5. Task 68
-// Обработка циклов
-
-// 1 Вывести с помощью цикла столбец чисел от 1 до 100
-for ($i = 1; $i <= 100; $i++) {
-    echo $i . '<br>';
-}
-
-//2 вывести в обратном поряндке
-for ($i = 100; $i >= 1; $i--) {
-    echo $i . '<br>';
-}
-
-//3 Выведите с помощью цикла столбец четных чисел от 1 до 100.
-for ($i = 1; $i <= 100; $i++) {
-    if ($i % 2 == 0) {
-        echo $i . '<br>';
-    } else {
-        continue;
-    }
-}
-//4   Заполните массив 10-ю иксами с помощью цикла.
-$arr = [];
-for ($i = 0; $i < 10; $i++) {
-    $arr[] = "x";
-}
-var_dump($arr);
-
-//5 Заполните массив числами от 1 до 10 с помощью цикла.
-$arr = [];
-for ($i = 0; $i <= 10; $i++) {
-    $arr[] += 1;
-}
-var_dump($arr);
-//6 Дан массив с числами. С помощью цикла выведите только те элементы массива, к
-//оторые больше нуля и меньше 10-ти
-$arr = [1, 4, 5, 15, -3, 17];
-foreach ($arr as $item) {
-    if ($item > 0 and $item < 10) {
-        echo $item . " ";
-    }
-}
-//7  Проверить есть ли 5 в массиве
-$arr = [1, 4, 5, 15, -3, 17];
-$flag = false;
-foreach ($arr as $item) {
-    if ($item == 5) {
-        $flag = true;
-        break;
-    }
-}
-echo $flag;;
-//8 Дан массив с числами.
-// С помощью цикла найдите сумму элементов этого массива.
-$arr = [1, 4, 5, 15, -3, 17];
+//Lesson 5. Практика 23 задания
+//1
+$var = 1;
+$var += 12;
+$var -= 14;
+$var *= 5;
+$var /= 7;
+$var++;
+$var--;
+echo $var;
+//2
+$c = 15;
+$d = 2;
+$result = $c + $d;
+echo $result;
+//3
+$a = 17;
+$b = 10;
+$c = $a - $b;
+$d = 7;
+$result = $c + $d;
+echo $result;
+//4
+$name = 'Денис';
+echo 'Привет, ' . $name;
+//5
+$num = '12345';
 $sum = 0;
-foreach ($arr as $item) {
-    $sum += $item;
+$length = strlen($num);
+for ($i = 0; $i < $length; $i++) {
+    $sum += $num[$i];
+} echo $sum;
+//6
+$m = 60;
+$h = $m * 60;
+$day = $h * 24;
+$month = $day * 30;
+echo "Секунд в часе =" . $h . " В сутках =" . $day . " В месяце =" . $month;
+//7
+$text = 'Я';
+$text .= ' хочу';
+$text .= ' знать';
+$text .= ' PHP!';
+echo $text;
+//8
+$var = 10;
+$var += 1;
+$var += 1;
+$var -= 1;
+echo $var;
+//9
+$arr = ['Привет ', "мир ", "!"];
+$text = $arr[0] . $arr[1] . $arr[2];
+echo $text;
+
+//10
+$arr = [
+    'ru' => ['голубой', 'красный', 'зеленый'],
+    'en' => ['blue', 'red', 'green'],
+];
+foreach ($arr as $key => $val) {
+    echo $key . " " . "--" . $val[0] . "\n";
 }
-echo $sum;
-//9 Дан массив с числами. С помощью цикла найдите
-// сумму квадратов элементов этого массива.
-$arr = [1, 4, 5, 15, -3, 17];
-$sum = 0;
-foreach ($arr as $item) {
-    $sum += $item * $item;
-}
-echo $sum;
-//10  Дан массив с числами. Найдите среднее арифметическое его элементов
-// (сумма элементов, делить на количество).
-$arr = [1, 2, 3, 4, 5, 6];
-$sum = 0;
-$length = count($arr);
-$sum1 = 0;
-foreach ($arr as $item) {
-    $sum += $item;
-    $sum1 = $sum / $length;
-}
-echo $sum1;
 //11
-$f = 3;
-$s = 0;
-for ($i = 0; $i <= $f; $i++) {
-    $s = $i * $i;
+$arr = ['a' => 1, 'b' => 2, 'c' => 3];
+foreach ($arr as $key => $val) {
+    if ($key === 'c') {
+        echo $key;
+    }
 }
-echo $s;
-//12  Напишите скрипт, который будет находить факториал числа.
-$f = 6;
-$s = 1;
-for ($i = 1; $i < $f + 1; $i++) {
-    $s = $s * $i;
+//12
+$arr = ['Коля' => '1000$', 'Вася' => '500$', 'Петя' => '200$'];
+foreach ($arr as $key => $value) {
+    if ($key === 'Коля' or $key === 'Петя') {
+        echo $key . ' ' . $value . '<br>';
+    }
 }
-echo $s;
+//13
+$a = 10;
+if ($a === 10) {
+    echo "Верно";
+} else {
+    echo "Не верно";
+}
+//14
+$min = 43;
+if ($min <= 15) {
+    echo "1 четверть";
+}  if ($min > 15 and $min <= 30) {
+    echo "2 четверть";
+} if ($min > 30 and $min <= 45) {
+    echo "3 четверть";
+} if ($min > 45 and $min <= 60) {
+    echo "4 четверть";
+}
+//15
+///////////////////////////1
+$lang = 'ru';
+if ($lang === 'ru') {
+    echo 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс';
+} if ($lang === 'en') {
+    echo 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su';
+}
+/////////////////////////////2
+$lang = 'ru';
+switch ($lang) {
+    case 'ru':
+        echo 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс';
+        break;
+    case 'en':
+        echo 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su';
+        break;
+}
+///////////////////////////////3
+$lang = 'en';
+$arr = [
+    'ru' => ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
+    'en' => ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+];
+foreach ($arr as $key => $value) {
+    var_dump($arr[$lang]);
+    break;
+}
+
+//16
+$a = null;
+if ($a === null) {
+    echo "Верно";
+} else {
+    echo "Не верно";
+}
+//17
+$a = 3;
+if (isset($a)) {
+    echo "Верно";
+} else {
+    echo "Не верно";
+}
+//18
+$var=false;
+if ($var!=true) {
+    echo "Верно";
+} else{
+    echo "Не верно";
+}
+//19
+$month=3;
+switch ($month){
+    case ($month<=2 or $month==12):
+        echo "Зима";
+        break;
+    case ($month>2 and $month<=5):
+        echo "Весна";
+        break;
+    case ($month>5 and $month<=8):
+        echo "Лето";
+        break;
+    case($month>8 and $month<=11):
+        echo "Осень";
+        break;
+}
+//20
+$year=2024;
+
+if (($year%4==0 and $year%100!=0) or $year%400==0) {
+    echo "Год високосный";
+} else {
+    echo "Год не високосный";
+}
+//21
+$a="abcde";
+if ($a[0]=="a") {
+    echo " Да ";
+} else{
+    echo "Нет";
+}
+//22
+$str="12345";
+if ($str[0]==1 or $str[0]==2 or $str[0]==3){
+    echo "Да";
+} else {
+    echo "Нет";
+}
+//23
+$str="123456";
+if ($str[0]+$str[1]+$str[2]==str[3]+$str[4]+$str[5]){
+    echo "Да";
+} else {
+    echo "Нет";
+}
 ?>
 
 
