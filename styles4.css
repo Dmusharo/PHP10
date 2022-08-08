@@ -1,6 +1,3 @@
-ul li i {
-    color: red;
-}
-p i  {
+li > b {
     color: red;
 }
