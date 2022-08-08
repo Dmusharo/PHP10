@@ -1,17 +1,29 @@
 p {
     color: orange;
     width: 300px;
-    text-align: center;
+    text-align: justify;
 }
 h1{
     color: green;
+    text-align: left;
 }
 h2{
     color: blue;
+    text-align: center;
+    width: 300px;
 }
 h3{
     color: red;
 }
 i{
     color: aqua;
+}
+table {
+    width: 500px;
+}
+th{
+    text-align: left;
+}
+td{
+    text-align: center;
 }
