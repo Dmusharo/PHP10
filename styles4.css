@@ -1,3 +1,6 @@
-li > b {
+.odd,.eee {
     color: red;
+}
+.eve {
+    color: green;
 }
