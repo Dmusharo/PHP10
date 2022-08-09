@@ -1,8 +1,17 @@
-h3.header {
-    color: red;
-    font-size: 30px;
+.block .header {
+    font-family: Arial;
 }
-h2.header {
+.block h2.header {
+    font-size: 30px;
     color: red;
-    font-size: 40px;
+}
+.block h3.header {
+    font-size: 20px;
+    color: green;
+}
+.eee h2 {
+    color: red;
+}
+.eee h2.bbb {
+    color: red;
 }
