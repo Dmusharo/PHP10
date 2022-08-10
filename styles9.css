@@ -1,15 +1,9 @@
-li:first-child{
+p:first-of-type{
     color: red;
 }
-li:last-child{
-    color: green;
-}
-li:nth-child(3n) {
+p:last-of-type{
     color: blue;
 }
-li:empty {
-    border: 1px solid blue;
-    list-style-type: circle;
-    color: blue;
-    width: 100px;
+h2:nth-last-of-type(2) {
+    color: red;
 }
