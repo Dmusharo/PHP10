@@ -1,9 +1,6 @@
-#block .bbb p {
+#elem + li {
     color: red;
 }
-#block p.bbb {
-    color: blue;
-}
-.fff h2.bbb{
-    color: purple;
+.elem + li {
+    color: green;
 }
