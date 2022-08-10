@@ -1,12 +1,9 @@
-div p {
-    color: blue;
-}
-div h2{
+#block .bbb p {
     color: red;
 }
-#block p{
-    color: green;
+#block p.bbb {
+    color: blue;
 }
-.bbb{
-    color: orange;
+.fff h2.bbb{
+    color: purple;
 }
