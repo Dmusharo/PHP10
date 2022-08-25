@@ -53,12 +53,12 @@ var_dump(($_POST));
 
 //4
 
-<form action="135%20result.php" method="GET">
-    <input name="num1">
-    <input name="num2">
-    <input name="num3">
+<form action=".docker/php/135%20result.php" method="POST">
+    <p>Введите дату вашего рождения</p><br>
+    Год: <br><input name="year"><br>
+    Месяц: <br><input name="month"><br>
+    День: <br><input name="day"><br><br>
     <input type="submit">
 </form>
-
 
 ?>
