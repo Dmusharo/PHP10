@@ -125,7 +125,7 @@ echo "В $year году 'пятниц 13-го' - <b>$friday</b><br><br>Они в
 
 //16 Узнайте какой день недели был 100 дней назад.
 $date=date_create('2022-8-24');
-date_modify($date,"-1 year");
+date_modify($date,"-100 year");
 echo date_format($date,"l");
 
 
